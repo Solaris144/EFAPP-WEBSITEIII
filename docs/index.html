@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EfAPP Project Submission</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f0f8;
+      color: #333;
+    }
+
+    nav {
+      background: linear-gradient(90deg, #046206, #348734);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffcc;
+      text-shadow: 0 0 8px rgba(255,255,255,0.8);
+      transform: scale(1.1);
+    }
+
+    header {
+      background: linear-gradient(to right, #E0F882, #38B789);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 1s ease forwards;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    section:nth-of-type(odd) {
+      background-color: #fff0f6;
+      animation-delay: 0.2s;
+    }
+
+    section:nth-of-type(even) {
+      background-color: #e3fafc;
+      animation-delay: 0.4s;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #5f27cd;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #5f27cd, #48dbfb);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .button-link:hover {
+      background: linear-gradient(90deg, #341f97, #0abde3);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222f3e;
+      color: white;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+        padding: 0 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#instructions">Instructions</a>
+    <a href="#submit">Submit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>EfAPP Project Submission Portal</h1>
+    <p>Showcase your academic work in style!</p>
+  </header>
+
+  <section id="instructions">
+    <h2>Submission Guidelines</h2>
+    <ul>
+      <li>✅ Submit before the deadline</li>
+      <li>✅ Include the date of submission in your folder</li>
+      <li>✅ Any file types that are compatible with Google Drive</li>
+      <li>🚫 No multiple submissions unless allowed</li>
+    </ul>
+  </section>
+
+  <section id="submit">
+    <h2>Submit Your Project</h2>
+    <p>Click the button below to go to the project submission form.</p>
+    <a class="button-link" href="https://drive.google.com/drive/folders/1N5OAI8cKWsFAergl-Ll0HlRqLGdqX7Pt?usp=sharing" target="_blank">
+      Submit via Google Drive
+    </a>
+  </section>
+
+  <section id="contact">
+    <h2>Need Help?</h2>
+    <p>
+      For questions, contact:<br>
+      <strong>Mr. Albert Gran</strong><br>
+      📧 jaybertinter@gmail.com
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 EfAPP Class Portal | Designed with 💜 for academic success
+  </footer>
+
+</body>
+</html>
